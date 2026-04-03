@@ -3,7 +3,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Shirokova_3ISIP523_TK.MainWindow"
-        Title="Shirokova_3ISIP523_TK">
-    Welcome to Avalonia!
+        x:Class="Shirokova_3ISIP523_TK.MainWindow" 
+        Title="Площади фигур">
+
+                <StackPanel Margin="20" Spacing="6">
+                        <TextBlock Text="Вид фигуры"/>
+
+                        <RadioButton Name="rectBtn" Content="Прямоугольник"/>
+                        <RadioButton Name="circleBtn" Content="Круг"/>
+                        <RadioButton Name="triangleBtn" Content="Треугольник"/>
+                        
+                        <TextBlock Name="label1" Text="1-я сторона"/>
+                        <TextBox Name="side1"/>
+                        
+                        <TextBlock Name="label2" Text="2-я сторона"/>
+                        <TextBox Name="side2"/>
+                        
+                        <TextBlock Name="label3" Text="3-я сторона"/>
+                        <TextBox Name="side3"/>
+                        
+                        <TextBlock Name="labelR" Text="Радиус"/>
+                        <TextBox Name="radius"/>
+                        
+                        <Button Content="Вычислить" Click="Calculate_Click"/>
+                        
+                        <TextBlock Text="Площадь ="/>
+                        <TextBlock Name="result" FontWeight="Bold"/>
+                </StackPanel>
 </Window>
